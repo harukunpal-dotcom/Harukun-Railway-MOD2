@@ -2,6 +2,7 @@ package com.harukunpal.railway;
 
 import com.harukunpal.railway.registry.RailwayBlocks;
 import com.harukunpal.railway.registry.RailwayItems;
+import com.harukunpal.railway.registry.RailwayCreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -14,5 +15,6 @@ public class HarukunRailwayMod {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         RailwayBlocks.BLOCKS.register(modBus);
         RailwayItems.ITEMS.register(modBus);
+        RailwayCreativeTabs.CREATIVE_MODE_TABS.register(modBus);
     }
 }
